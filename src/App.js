@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Provider } from "react-redux";
+import TaskList from "./components/TaskList";
+import AddTaskPage from "./components/AddTaskPage";
+import store from "./app/store";
+import ErrorBoundary from "./components/ErrorBoundary";
+import UpdateTaskPage from "./components/UpdateTaskPage";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Router>
+        <ErrorBoundary>
+          <div className="App">
+            <div className="flex-middle">
+            <Link className="remove-link-style" to={`/`}><h1>Task Dashboard</h1></Link>
+            </div>
+
+            <Routes>
+              <Route path="/" element={<TaskList />} />
+              <Route path="/add-task" element={<AddTaskPage />} />
+              <Route path="/update-task/:taskId" element={<UpdateTaskPage />} />
+            </Routes>
+          </div>
+        </ErrorBoundary>
+      </Router>
+    </Provider>
   );
 }
 

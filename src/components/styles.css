@@ -1,0 +1,145 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.task-actions {
+  margin-right: 10px;
+}
+
+.edit-link {
+  text-decoration: none;
+  color: #3498db;
+}
+
+.add-task-link {
+  text-decoration: none;
+  color: #780f86;
+  font-weight: bold;
+  padding: 8px 10px;
+  background-color: #b9e73c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.delete-button {
+  padding: 8px 10px;
+  background-color: #e74d3ce3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.edit-button {
+  padding: 5px 10px;
+  background-color: #e2f4ff;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.list-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-end{
+  display: flex;
+  justify-content: end;
+}
+
+.flex-middle{
+  display: flex;
+  justify-content:center;
+}
+
+.task-status{
+  padding: 5px 10px;
+  background-color: #d8db3496;
+  color: #080404;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+  width: fit-content;
+}
+
+.task-description{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+  width: fit-content;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  max-width: 470px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-error {
+  color: #e74c3c;
+  margin-top: 5px;
+}
+
+.form-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-link-style{
+  text-decoration:none;
+    color: #3498db;
+    font-weight:600;
+    font-size: x-large;
+    /* Add any additional styles as needed */
+}
+
